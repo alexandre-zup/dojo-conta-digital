@@ -1,13 +1,13 @@
-package br.com.zup.edu.dojo.contadigial;
+package br.com.zup.edu.dojo.contadigital;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContaDigialApplication {
+public class ContaDigitalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ContaDigialApplication.class, args);
+		SpringApplication.run(ContaDigitalApplication.class, args);
 	}
 
 }
