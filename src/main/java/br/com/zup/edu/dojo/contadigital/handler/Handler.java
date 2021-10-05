@@ -22,4 +22,9 @@ public class Handler {
     public ResponseEntity<?> SaldoInsuficiente(SaldoInsuficienteException e){
         return ResponseEntity.unprocessableEntity().body(new ValidationErrorsOutputDto(e.getMessage()));
     }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<?> IllegalArgumentException(IllegalArgumentException e){
+        return ResponseEntity.badRequest().body(new ValidationErrorsOutputDto(e.getMessage()));
+    }
 }
