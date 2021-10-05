@@ -1,0 +1,1 @@
+--INSERT INTO Conta(id, numero, saldo, id_cliente)VALUES(1,1234,0.0,"e8dee5fc-3099-416e-a92a-2d33ff10b226");

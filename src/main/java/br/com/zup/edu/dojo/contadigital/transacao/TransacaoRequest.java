@@ -9,11 +9,33 @@ import java.math.BigDecimal;
 
 public class TransacaoRequest {
 
-    @NotBlank @JsonProperty
+    @NotBlank
+    @JsonProperty
     private String numeroDaConta;
-    @NotBlank @JsonProperty
-    private String tipoDaTransacao;
-    @NotNull @Positive @JsonProperty
+    @NotNull
+    @JsonProperty
+    private TipoTransacao tipoDaTransacao;
+    @NotNull
+    @Positive
+    @JsonProperty
     private BigDecimal valor;
 
+
+    public TransacaoRequest(String numeroDaConta, TipoTransacao tipoDaTransacao, BigDecimal valor) {
+        this.numeroDaConta = numeroDaConta;
+        this.tipoDaTransacao = tipoDaTransacao;
+        this.valor = valor;
+    }
+
+    public String getNumeroDaConta() {
+        return numeroDaConta;
+    }
+
+    public TipoTransacao getTipoDaTransacao() {
+        return tipoDaTransacao;
+    }
+
+    public BigDecimal getValor() {
+        return valor;
+    }
 }
