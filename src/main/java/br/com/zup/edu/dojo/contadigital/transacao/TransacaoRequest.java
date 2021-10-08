@@ -11,7 +11,7 @@ public class TransacaoRequest {
 
     @NotBlank
     @JsonProperty
-    private String numeroDaConta;
+    private String numeroConta;
     @NotNull
     @JsonProperty
     private TipoTransacao tipoDaTransacao;
@@ -21,14 +21,14 @@ public class TransacaoRequest {
     private BigDecimal valor;
 
 
-    public TransacaoRequest(String numeroDaConta, TipoTransacao tipoDaTransacao, BigDecimal valor) {
-        this.numeroDaConta = numeroDaConta;
+    public TransacaoRequest(String numeroConta, TipoTransacao tipoDaTransacao, BigDecimal valor) {
+        this.numeroConta = numeroConta;
         this.tipoDaTransacao = tipoDaTransacao;
         this.valor = valor;
     }
 
-    public String getNumeroDaConta() {
-        return numeroDaConta;
+    public String getNumeroConta() {
+        return numeroConta;
     }
 
     public TipoTransacao getTipoDaTransacao() {
